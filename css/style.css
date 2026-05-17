@@ -1,0 +1,738 @@
+/* Default Settings */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    animation: fade 1s forwards;
+}
+
+:focus {
+    outline: none;
+    border: none;
+}
+
+/* Transitions */
+
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes move {
+    from {transform: translateX(130%)}
+    to {transform: translateX(-130%)}
+}
+
+/* Header Section */
+
+.header {
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    background-color: #FFFFFF;
+    display: flex;
+    height: 9.5rem;
+    justify-content: center;
+    padding: 6rem 4rem;
+}
+
+.main-navig-list {
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.main-navig-link:link, .main-navig-link:visited {
+    display: inline-block;
+    color: #000000;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.main-navig-link:hover, .main-navig-link:active {
+    font-weight: 600;
+}
+
+.main-navig-link.navig-cta:link, .main-navig-link.navig-cta:visited {
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 1.5rem 1.5rem;
+}
+
+.main-navig-link.navig-cta:hover, .main-navig-link.navig-cta:active {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: 300;
+    transform: none;
+}
+
+/* Countdown Section */
+
+.section-countdown {
+    background-color: #000000;
+    padding: 11rem 0 81rem 0;
+}
+
+.countdown-heading {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-top: 25rem;
+    text-align: center;
+}
+
+#countdown {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 5rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* Index Section */
+
+.section-index {
+    background-color: #000000;
+    padding: 11rem 0 10rem 0;
+}
+
+.index {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    justify-content: center;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+
+.index-text-box {
+    text-align: center;
+}
+
+.index-text {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 200;
+}
+
+.index-text-lower {
+    color: #666666;
+    margin-bottom: 5rem;
+}
+
+.index-heading {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 10rem;
+    font-weight: 700;
+}
+
+.index-img {
+    width: 100%;
+}
+
+.btn-index {
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/* About Section */
+
+.section-about {
+    background-color: #000000;
+    padding: 3rem 0 10rem 0;
+}
+
+.heading-text-box {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.3rem;
+}
+
+.about-text {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.about-text span {
+    font-weight: 600;
+}
+
+.primary-heading {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.primary-description {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about {
+    align-items: center;
+    display: grid;
+    gap: 10rem;
+    grid-template-columns: 1fr 1fr;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 11rem 3rem;
+}
+
+.step-number {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.step-title {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.step-title-one, .step-number-one {
+    color: #2237B3;
+}
+
+.step-title-two, .step-number-two {
+    color: #FF3737;
+}
+
+.step-title-three, .step-number-three {
+    color: #36B025;
+}
+
+.step-description {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.3;
+}
+
+.description-link {
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.about-img-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.step-img {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+/* Packages Section */
+
+.section-packages {
+    background-color: #000000;
+    padding: 3rem 0 10rem 0;
+}
+
+.package {
+    align-items: center;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 11rem 3rem;
+}
+
+.packages-text {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.packages-text span {
+    font-weight: 600;
+}
+
+
+.package-plan {
+    border: 1px solid #FFFFFF;
+    background-color: #000000;
+    padding: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.package-name, .package-price {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.package-name {
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.package-price {
+    color: #FFFFFF;
+    font-size: 10rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.fa-fire-flame-simple, .fa-fire-flame-curved, .fa-fire {
+    color: #FFFFFF;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+.package-price span {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.package-attributes {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+.package-attribute {
+    color: #FFFFFF;
+    display: flex;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 200;
+    gap: 0.6rem;
+    line-height: 0.3;
+}
+
+.package-attribute span {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.btn, .btn:link, .btn:visited {
+    cursor: pointer;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-full:link, .btn-full:visited {
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.btn-full:hover, .btn-full:active {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.btn-outline:link, .btn-outline:visited {
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.btn-outline:hover, .btn-outline:active {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+}
+
+.btn-index:hover, .btn-index:active {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.package-sign-up {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.package-information {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 200;
+    font-size: 1.6rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.package-information span {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.package-conditions {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.package-conditions span {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+/* Portfolio Section */
+
+.section-portfolio {
+    background-color: #000000;
+    padding: 3rem 0 10rem 0;
+}
+
+.portfolio-one {
+    align-items: center;
+    display: grid;  
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 11rem 3rem 0 3rem;
+}
+
+.portfolio-two {
+    align-items: center;
+    display: grid;  
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 3rem 3rem 3rem;
+}
+
+.portfolio-three {
+    align-items: center;
+    display: grid;  
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3rem 3rem;
+}
+
+.video-container {
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    width: 100%;
+}
+
+.portfolio-text {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.portfolio-text span {
+    font-weight: 600;
+}
+
+
+.portfolio-img {
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* CTA Section */
+
+.section-cta {
+    background-color: #000000;
+    padding: 3rem 0 10rem 0;
+}
+
+.cta {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 11rem 3rem;
+}
+
+.cta-text {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.cta-text span {
+    font-weight: 600;
+}
+
+.contact {
+    border: 1px solid #FFFFFF;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 68rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.cta-heading {
+    color: #FFFFFF;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.cta-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-form {
+    column-gap: 3rem;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+.cta-form label {
+    color: #FFFFFF;
+    display: block;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.cta-form input, .cta-form select, .cta-form textarea {
+    appearance: none;
+    border: 1px solid #000000;
+    color: #000000;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.cta-form textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.cta-img-box {
+    background-image: url(../imgs/cta-img.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-form {
+    align-self: end;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+}
+
+.btn-form:hover, .btn-form:active {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* Footer Section */
+
+.section-footer {
+    border-top: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    padding: 3rem 0 0 0;
+}
+
+.footer {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.footer-information {
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 3.3rem;
+}
+
+.platform-link:link, .platform-link:visited {
+    animation: move 20s linear infinite;
+    color: #000000;
+    display: block;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+/* Media Queries */
+/* Below 600px: Mobiles */
+
+@media (max-width: 37.5em) {
+
+.main-navig-list {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.header {
+    padding: 16rem 4rem;
+}
+
+.index {
+    grid-template-columns: 1fr;
+}
+
+.index-text, .index-text-lower {
+    font-size: 2rem;
+}
+
+.index-heading {
+    font-size: 7rem;
+}
+
+.index-img {
+    width: 100%;
+}
+
+.primary-heading {
+    font-size: 3.3rem;
+}
+
+.about {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 1.6rem;
+}
+
+.about-text span {
+    font-size: 1.6rem;
+}
+
+.step-number {
+    font-size: 3rem;
+}
+
+.step-title {
+    font-size: 2rem
+}
+
+.step-description {
+    font-size: 1.6rem;
+}
+
+.package {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.packages-text, .packages-text span {
+    font-size: 1.6rem;
+}
+
+.package-name {
+    font-size: 3.3rem;
+}
+
+.package-price {
+    font-size: 6rem;
+}
+
+.package-attribute, .package-attribute span {
+    font-size: 1.6rem;
+}
+
+.package-additional {
+    font-size: 1.6rem;
+}
+
+.package-conditions, .package-conditions span {
+    font-size: 1.6rem;
+}
+
+
+/* .fa-fire-flame-simple, .fa-fire-flame-curved, .fa-fire {
+    font-size: 3.5rem;
+} */
+
+.portfolio-one, .portfolio-two, .portfolio-three {
+    grid-template-columns: 1fr;
+    padding: 11rem 6rem;
+}
+
+.portfolio-text, .portfolio-text span {
+    font-size: 1.6rem;
+}
+
+.contact {
+    grid-template-columns: 1fr;
+}
+
+.cta-text, .cta-text span {
+    font-size: 1.6rem;
+}
+
+.cta-form textarea {
+    height: 30rem;
+}
+
+.contact {
+    height: 85rem;
+}
+
+.cta-img-box {
+    display: none;
+}
+}
