@@ -10,10 +10,6 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    animation: fade 1s forwards;
-}
-
 :focus {
     outline: none;
     border: none;
